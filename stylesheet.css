@@ -1,19 +1,32 @@
 #logo{
-
     width: 150px;
     height: 50px;
 }
 .container-fluid{
-    padding-left:0px;
     background-color:goldenrod;
 }
-
-.carousel-control-next, .carousel-control-prev {
-    background-color: goldenrod;
-    width:5%;
-}
 .slider-img {
-
         margin-left: 40px;
         height:400px;
+}
+
+.row-dim{
+    height:40%;
+    width:100%;
+}
+.no-gutters{
+    margin-left: -15;
+    margin-right: 15;
+    background-color: goldenrod;
+}
+.footer{
+    text-align: center;
+}
+.btn-primary{
+    float:right;
+}
+.memberSignUp{
+    width:max-content;
+    height: fit-content;
+  
 }
