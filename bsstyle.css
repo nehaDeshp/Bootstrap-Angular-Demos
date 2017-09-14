@@ -1,0 +1,27 @@
+.container-fluid{
+    background-color: #563d7c;
+}
+.logoStyle{
+    border: 1px solid white;
+    border-radius: 5px;
+    height:6%;
+}
+.navbar-brand{
+  float:none;
+}
+.navbar-brand>img{
+  display:inline-block;
+}
+.navbar-header{
+   font-size:18px;
+   padding:10px;
+}
+.linkFontStyles{
+
+    color:white;
+    margin:5px;
+}
+.dropdown{
+
+    float:right;
+}
