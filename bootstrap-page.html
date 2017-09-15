@@ -1,24 +1,25 @@
 <html>
     <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link  rel="stylesheet" href="bsstyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-dark">
+        <nav class="navbar navbar-default">
             <div class="container-fluid bgcolor  navbar-fixed-top"> 
                 <div class="navbar-header ">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                            data-target="#bs-example-navbar-collapse-1">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                        <!--<span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>-->
                     </button>
                     <a class="navbar-brand" href="#">
                         <img alt="Brand" src="logo.jpg" class="logoStyle">
@@ -26,7 +27,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" class="linkFontStyles"> Home </a></li>
+                        <li><a href="#" class="linkFontStyles"> Home </a></li>
                         <li><a href="#" class="linkFontStyles"> Documentation </a></li>
                         <li><a href="#" class="linkFontStyles"> Examples </a></li>
                         <li><a href="#" class="linkFontStyles"> Themes </a></li>
@@ -35,9 +36,12 @@
                         <li><a href="#" class="linkFontStyles"> Blog </a></li>
                     </ul>
                     <button type="button" class="btn btn-default">Download</button> 
+                    <a href="#" class="fa fa-slack icons" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-twitter icons" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-github icons" aria-hidden="true"></a>
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle padDropDown" id="drop1" data-toggle="dropdown" 
-                            role="button" aria-haspopup="true" aria-expanded="false"> Dropdown 
+                            role="button" aria-haspopup="true" aria-expanded="false"> v4.0 
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownmenu1">
@@ -49,8 +53,8 @@
                         </ul>
                     </div>          
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
         <div class="container">
             <div class="row dim">
             </div>
@@ -61,8 +65,8 @@
                             <p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
                             <p> Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
                         </h3>
-                        <button class="btn">Get Started</button>
-                        <button class="btn">Download</button><br>
+                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-primary">Download</button><br>
                         Currently v4.0.0-beta
                         <div class="row" style="height:10%">
                         </div>
@@ -84,16 +88,15 @@
             <div class="row" style="height:20%">
             </div>
             <div class="row">
-                <div class="col-md-4 jumbotron fixStyle">
+                <div class="col-md-3 col-sm-6 col-xs-12 jumbotron fixStyle">
                     <h3>Installation</h3>
                     <h4><p>Include Bootstrap's source Sass and JavaScript files via Bower, Composer, Meteor, or npm. Package managed installs don't include documentation, but do include our build system and readme.</p></h4>
                     <pre>npm install bootstrap@4.0.0-beta </pre>
                     <pre>gem install bootstrap -v 4.0.0.alpha6</pre>
                     <pre>bower install bootstrap#v4.0.0-beta</pre>  
-                    <button class="btn btn-default" style="float: left"> Read Installation Docs</button>                    
-                    
+                    <button class="btn btn-default" style="float: left"> Read Installation Docs</button>            
                 </div>
-                <div class="col-md-4 jumbotron fixStyle">
+                <div class="col-md-3 col-sm-6 col-xs-12 jumbotron fixStyle">
                     <h3> Bootstrap cdn</h3>
                     <h4><p>When you only need to include Bootstrap's compiled CSS or JS, you can use the Bootstrap CDN.</p></h4>
                     <br>
@@ -106,7 +109,13 @@
                     </pre>
                     <button class="btn btn-default" style="float: left"> Explore more docs</button>
                 </div>
-                <div class="col-md-4 jumbotron fixStyle">
+                <div class="col-md-3 col-sm-6 col-xs-12 jumbotron fixStyle">
+                    <h3>Official Themes</h3>
+                    <h4><p>Take Bootstrap 4 to the next level with official premium themes - toolkits built on Bootstrap with new components and plugins, docs, and build tools.</p></h4>
+                    <img src="official.png" class="imgStyle"></img>
+                    <button class="btn btn-default" style="float: left"> Browse Themes</button>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12 jumbotron fixStyle">
                     <h3>Official Themes</h3>
                     <h4><p>Take Bootstrap 4 to the next level with official premium themes - toolkits built on Bootstrap with new components and plugins, docs, and build tools.</p></h4>
                     <img src="official.png" class="imgStyle"></img>
@@ -114,34 +123,19 @@
                 </div>
             </div>
         </div>        
-        <div class="row">
-            <nav class="navbar navbar-light">
-                <div class="container-fluid jumbotron page-footer"> 
-                    <div class="navbar-footer">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-                                data-target="#ft-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="ft-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav   ">
-                            <li class="active"><a href="#" class="page-footer"><b> Github </b></a></li>
-                            <li><a href="#" class="page-footer"> <b>Twitter</b> </a></li>
-                            <li><a href="#" class="page-footer"> <b>Examples</b> </a></li>
-                            <li><a href="#" class="page-footer"> <b>About</b> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container-fluid jumbotron page-footer">
-                <p>Designed and built with all the love in the world by @mdo and @fat. 
-                    Maintained by the core team with the help of our contributors.
-                    Currently v4.0.0-beta. Code licensed MIT, docs CC BY 3.0.
+        <footer>
+            <div class="container-fluid jumbotron">
+                <ul class="horizontal">
+                    <li><a href="#"  ><b> Github </b></a></li>
+                    <li><a href="#"> <b>Twitter</b> </a></li>
+                    <li><a href="#"> <b>Examples</b> </a></li>
+                    <li><a href="#"> <b>About</b> </a></li>
+                </ul>
+                </br>
+                <p style="font-size:15px">Designed and built with all the love in the world by @mdo and @fat. 
+                Maintained by the core team with the help of our contributors.Currently v4.0.0-beta. Code licensed MIT, docs CC BY 3.0.
                 </p>
-            </div>  
-        </div>
+            </div>
+        </footer>
     </body>
 </html>
