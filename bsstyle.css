@@ -39,8 +39,8 @@
     margin: 10px 0px 0px 0px;
     
 }
-.btn-default ::hover{
-    color:gold;
+.btn-default:hover{
+    background-color:gold;
 }
 .padDropDown{
     padding-right: 20px;
@@ -59,13 +59,35 @@
     font-size:50px;
     font-weight: 10px;
 }
-.page-footer{
-    color:black;
-    height:max-content;
-    padding: 0px;
-    margin:0px;
-}
 .fixStyle{
     height:600px;
     border:3px solid white;
+}
+footer p{
+    font-size:10px;
+}
+.horizontal li{
+    list-style-type: none;
+    float: left;
+    margin-left:10px;
+}
+.jumbotron{
+
+    font-size:10px;
+}
+.icons{
+    font-size:20px !important;
+    padding-right: 20px;
+    float: right;
+    padding-top: 20px;
+}
+.btn-primary{
+    height:40px;
+    width:40%;
+    margin:10px;
+    border-color:skyblue;
+    color:skyblue;
+}
+.btn-primary:hover{
+    background-color;
 }
