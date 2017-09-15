@@ -3,29 +3,30 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
               integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
               crossorigin="anonymous">
-
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
                 crossorigin="anonymous"></script>
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
         <link  rel="stylesheet" href="bsstyle.css">
     </head>
     <body>
-        <nav class="navbar navbar-dark ">
-            <div class="container-fluid">
-                <div class="navbar-header">
+        <div class="container-fluid bgcolor  navbar-fixed-top"> 
+            <nav class="navbar navbar-dark ">
+                <div class="navbar-header ">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
                             data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img alt="Brand" src="bootstrap.jpg" class="logoStyle">
+                        <img alt="Brand" src="logo.jpg" class="logoStyle">
                     </a>
                     <a href="#" class="linkFontStyles"> Home </a>
                     <a href="#" class="linkFontStyles"> Documentation </a>
@@ -34,24 +35,84 @@
                     <a href="#" class="linkFontStyles"> Jobs </a>
                     <a href="#" class="linkFontStyles"> Expo </a>
                     <a href="#" class="linkFontStyles"> Blog </a>
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" 
-                            role="button" aria-haspopup="true" aria-expanded="false"> Dropdown 
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownmenu1">
-                            <li><a href="#">Latest(4.x)</a></li>
-                            <li><a href="#">v4 Alpha 6</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">v3.3.7</a></li>
-                            <li><a href="#">v2.3.2</a></li>  
-                        </ul>
-                    </div> 
-                    <a class="nav-link p-2" href="www.github.com">
-                    <svg class="navbar-nav-svg"><title> Github </title>
-                    </a>    
+                </div> 
+                <button type="button" class="btn btn-default">Download</button> 
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle padDropDown" id="drop1" data-toggle="dropdown" 
+                        role="button" aria-haspopup="true" aria-expanded="false"> Dropdown 
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownmenu1">
+                        <li><a href="#">Latest(4.x)</a></li>
+                        <li><a href="#">v4 Alpha 6</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">v3.3.7</a></li>
+                        <li><a href="#">v2.3.2</a></li>  
+                    </ul>
                 </div>                      
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row dim">
             </div>
-        </nav>
+            <div class="row">
+                <div class="col-sm-6" imgStyle>
+                        <h1 class="page-header">Bootstrap</h1>
+                        <h3> 
+                            <p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+                            <p> Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+                        </h3>
+                        <button class="btn">Get Started</button>
+                        <button class="btn">Download</button><br>
+                        Currently v4.0.0-beta
+                        <div class="row" style="height:10%">
+                        </div>
+                        <div class="row">
+                            <div class=col-md-3 jumbotron>
+                                    <img alt="Brand" src="slack.png" class="logoStyle">
+                            </div>
+                            <div class=col-md-4 jumbotron>
+                                <small>All the tools your team needs in one place. Slack: Where work happens.
+                            </div>
+                        </div>
+                        
+                </div>
+                <div class="col-sm-6" imgStyle>
+                    <img src="bootstrap-stack.png" class="imgStyle">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="height:20%">
+            </div>
+            <div class="row">
+                <div class="col-md-4 jumbotron">
+                    <h3>Installation</h3>
+                    <h4><p>Include Bootstrap's source Sass and JavaScript files via Bower, Composer, Meteor, or npm. Package managed installs don't include documentation, but do include our build system and readme.</p></h4>
+                    <pre>npm install bootstrap@4.0.0-beta </pre>
+                    <pre>gem install bootstrap -v 4.0.0.alpha6</pre>
+                    <pre>bower install bootstrap#v4.0.0-beta</pre>                      
+                    
+                </div>
+                <div class="col-md-4 jumbotron">
+                    <h3> Bootstrap cdn</h3>
+                    <h4><p>When you only need to include Bootstrap's compiled CSS or JS, you can use the Bootstrap CDN.</p></h4>
+                    <br>
+                    <h4> CSS-only </h4>
+                    <!--<pre><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"></pre>
+                    <h4>JS, Popper and JQuery</h4>
+                    <pre>
+                        script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                        script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+                        script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+                    </pre>-->
+                </div>
+                <div class="col-md-4 jumbotron">
+                    <h3>Official Themes</h3>
+                    <h4><p>Take Bootstrap 4 to the next level with official premium themes - toolkits built on Bootstrap with new components and plugins, docs, and build tools.</p></h4>
+                </div>
+            </div>
+        </div>
+        <
     </body>
 </html>
